@@ -1,0 +1,23 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+	{% include 'components/head.njk' %}
+
+  <body>
+
+
+		<header class="absolute w-full" >
+      <a class="logo block mx-auto" href="{{ '/' | url }}"><img src="assets/images/claii-logo-black.svg" alt="{{ metadata.title }}" /></a>
+		</header>
+
+		<main>
+      {% block content %}
+      {% endblock %}
+		</main>
+
+		{% include 'components/footer.njk' %}
+
+  </body>
+
+
+</html>

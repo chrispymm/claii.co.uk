@@ -1,9 +1,0 @@
-@tailwind base;
-
-@tailwind components;
-
-@import "./fonts";
-@import "./index";
-
-@tailwind utilities;
-

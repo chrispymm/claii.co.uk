@@ -1,0 +1,34 @@
+<section class="products m-auto my-16">
+  <div class="products-grid">
+  {% for product in products %}
+    <a href="{{ product.url }}" class="block product">
+      <div class="product__image">
+        <img src="{{ product.image.url_570xN }}", alt="{{ product.title }}" />
+      </div>
+      <div class="product__overlay">
+        <div class="product__meta">
+          <div>
+            <div class="product__price my-1 text-3xl">£{{ product.price }}</div>
+            <div class="product__action my-1">
+              <span class="inline-block button">Buy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+  <div class="info">
+    <h1>Beautiful Handmade Jewellery</h1>
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam neque, accumsan non orci eget, euismod commodo augue. Suspendisse id mattis tellus. Duis fringilla a odio vel viverra. Sed eget vestibulum lorem. Vestibulum mattis, magna in sagittis cursus, purus eros hendrerit libero, dictum varius purus erat at dolor.
+</p>
+  </div>
+
+  <div class="info2">
+
+  </div>
+  <div class="blank"></div>
+  <div class="blank2"></div>
+
+  </div>
+</section>

@@ -19,19 +19,19 @@ module.exports = function(eleventyConfig) {
   });
 
   // Minify CSS
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
+  //eleventyConfig.addFilter("cssmin", function(code) {
+    //return new CleanCSS({}).minify(code).styles;
+  //});
 
-  // Minify JS
-  eleventyConfig.addFilter("jsmin", function(code) {
-    let minified = UglifyJS.minify(code);
-    if (minified.error) {
-      console.log("UglifyJS error: ", minified.error);
-      return code;
-    }
-    return minified.code;
-  });
+  //// Minify JS
+  //eleventyConfig.addFilter("jsmin", function(code) {
+    //let minified = UglifyJS.minify(code);
+    //if (minified.error) {
+      //console.log("UglifyJS error: ", minified.error);
+      //return code;
+    //}
+    //return minified.code;
+  //});
 
   // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
@@ -47,11 +47,11 @@ module.exports = function(eleventyConfig) {
   });
 
   // only content in the `posts/` directory
-  eleventyConfig.addCollection("products", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/src\/_products\//) !== null;
-    });
-  });
+  //eleventyConfig.addCollection("products", function(collection) {
+    //return collection.getAllSorted().filter(function(item) {
+      //return item.inputPath.match(/^\.\/src\/_products\//) !== null;
+    //});
+  //});
 
   // Don't process folders with static assets e.g. images
 
@@ -88,8 +88,8 @@ module.exports = function(eleventyConfig) {
     htmlTemplateEngine: "njk",
     dir: {
       input: "src",
-      includes: "_includes",
-      data: "_data",
+      includes: "includes",
+      data: "data",
       output: "dist"
     }
 
