@@ -7,7 +7,7 @@ import images  from './images'
 import styles  from './styles'
 
 function reset() {
-  return src('dist/assets')
+  return src('dist/assets', {allowEmpty: true})
         .pipe(clean({read: false}))
 }
 
