@@ -21,7 +21,7 @@ function reload() {
 
 //export images
 export const dev =  series( reset, fonts, images, scripts, styles )
-export const build = series( reset, fonts, images, scripts )
+export const build = series( reset, fonts, images, scripts, styles )
 
 export default function() {
   watch('src/assets/**/*', { ignoreInitial: false }, dev);

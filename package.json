@@ -7,8 +7,8 @@
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve --quiet",
     "dev:gulp": "gulp",
     "build": "run-s prod:*",
-    "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./build",
-    "prod:gulp": "NODE_ENV=production gulp build --require esm --gulpfile tasks"
+    "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./dist",
+    "prod:gulp": "NODE_ENV=production gulp build --require esm"
   },
   "repository": {
     "type": "git",
