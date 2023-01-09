@@ -35,7 +35,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-uglify": "^3.0.2",
-    "luxon": "^1.12.1",
+    "luxon": "^2.5.2",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.0.2",
     "node-fetch": "^2.6.0",
